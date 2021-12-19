@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>My Website</title>
+<style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    
+    h1 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        padding: 25px;
+    
+    }
+    
+    .column {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: 5px 0;
+        margin: 20px;
+    }
+    
+    .parent{
+        flex: 1;
+        margin: 2px;
+        border: 2px solid black;
+        margin-left: 20px;
+    }
+    
+    h5 {
+        width: 140px;
+        height: 40px;
+        border-left: solid black;
+        text-align: center;
+        padding: 9px;
+        border-bottom: 2px solid black;
+    }
+    
+    #child {
+        background-color: gray;
+        float: right;
+    }
+    
+    #child2 {
+        background-color: rgb(red, green, blue);
+        float: right;
+    }
+
+    #child3 {
+        background-color: salmon;
+        float: right;
+    }
+
+    p {
+        padding: 50px 1px;
+    }
+
+    @media(min-width: 992px) {
+        .column .parent {
+            width: 30%;
+            height: auto;
+            margin-left: 20px;
+            background-color: skyblue;
+            margin-bottom: 10px;
+            float: left;
+            bottom: 2px solid black;
+            border-radius: 5px;
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        .column .parent {
+            background-color: rosybrown;
+            flex-basis: 40%;
+            border: 2px solid black;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .column .child :last-child {
+            flex-basis: 100%;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+
+        .column .child :nth-child(2) {
+            margin-right: 0;
+        }
+    }
+
+
+    @media screen and (max-width: 680px) {
+        .column .parent {
+            flex-basis: 100%;
+            margin: 0 0 5px 0;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            background-color: burlywood;
+        }
+    }
+ </style>
+</head>
+<body>
+   <h1>Our Menu</h1>
+   <section class="column">
+   <div class="parent">
+   <h5 id="child1">Pasta</h5>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   </div>
+   <div class="parent">
+   <h5 id="chld2">Sphagetti</h5>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   </div>
+   <div class="parent">
+   <h5 id="cjild3">Carbonara</h5>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   </div>
+   </section>
+   
+</body>
+</html>
